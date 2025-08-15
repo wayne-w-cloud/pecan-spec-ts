@@ -10,18 +10,6 @@ export interface HistologyPublicSlideSearchRequest {
     sample_name?: string
 }
 
-export interface HistologyPublicSimiliarSlideSearchRequest {
-    diseases?: string;
-    unknown_ages?: boolean;
-    subject_sex?: string;
-    sample_site?: string;
-    sample_disease_stage?: string;
-    sample_is_metastatic?: string;
-    min_age?: number;
-    max_age?: number;
-    sample_name?: string;
-}
-
 export interface HistologyPublicSlideSearchResponse {
     total_sample_count: number;
     number_of_pages: number;
