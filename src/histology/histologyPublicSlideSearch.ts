@@ -10,6 +10,18 @@ export interface HistologyPublicSlideSearchRequest {
     sample_name?: string
 }
 
+export interface HistologyPublicSimiliarSlideSearchRequest {
+    diseases?: string;
+    unknown_ages?: boolean;
+    subject_sex?: string;
+    sample_site?: string;
+    sample_disease_stage?: string;
+    sample_is_metastatic?: string;
+    min_age?: number;
+    max_age?: number;
+    sample_name?: string;
+}
+
 export interface HistologyPublicSlideSearchResponse {
     total_sample_count: number;
     number_of_pages: number;
@@ -46,4 +58,24 @@ export interface HistologyPublicFilteredSlide {
     data_facet_source: string;
     // TODO make it an enum
     histology_image_status: string;
+}
+
+export interface HistologyPublicFilterResponse {
+    data: {
+        filters: HistologyFilterName;
+        filter_labels: HistologyFilterLabel;
+    }
+}
+
+export interface HistologyFilterLabel {
+    [key: string]: string;
+}
+
+export interface HistologyFilterName {
+    [key: string]: FilterKVPair[];
+}
+
+export interface FilterKVPair {
+    value: string;
+    text: string;
 }

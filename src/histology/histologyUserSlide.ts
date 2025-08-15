@@ -1,7 +1,7 @@
 export interface HistologyUserSlideResponse {
     sample: HistologyUserSlideSample;
     metadata_labels: HistologyUserSlideMetaDataLabels;
-    siblings: any[]
+    siblings: HistologyUserSlideSample[]
 }
 
 export interface HistologyUserSlideSample {
@@ -23,6 +23,7 @@ export interface HistologyUserSlideSample {
     histology_main_image_2048: string;
     histology_main_image_1024: string;
     histology_main_image_512: string;
+    scores?: number
 }
 
 export interface HistologyUserSlideMetaDataLabels {
@@ -36,4 +37,33 @@ export interface HistologyUserSlideMetaDataLabels {
     histology_image_magnification: string;
     histology_intro: string;
     long_disease_name: string
+}
+
+export interface HistologyUserSlideSimiliarSlideSearchResponse {
+    data: HistologyUserSlideSample[];
+}
+
+export interface HistologyUserSlidePatchResponse {
+    data: SlidePatch[];
+}
+
+export interface SlidePatch {
+    id: number;
+    slide_id: string;
+    wsi_loc_x: number,
+    wsi_loc_y: number,
+    width: number,
+    height: number
+}
+
+export interface HistologyPublicSimiliarSlideSearchRequest {
+    diseases?: string;
+    unknown_ages?: boolean;
+    subject_sex?: string;
+    sample_site?: string;
+    sample_disease_stage?: string;
+    sample_is_metastatic?: string;
+    min_age?: number;
+    max_age?: number;
+    sample_name?: string;
 }

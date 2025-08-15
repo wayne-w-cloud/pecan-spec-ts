@@ -7,5 +7,4 @@ export type {
     HistologyPublicSlideSearchResponse,
     HistologyUserSlideResponse,
     HistologyUserSlideMetaDataLabels,
-    HistologyUserSlideSample
-};
+    HistologyUserSlideSample};
