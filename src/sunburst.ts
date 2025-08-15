@@ -20,34 +20,60 @@ export interface SunburstNodeData {
 }
 
 export interface SunburstNode {
-    [key: string]: SunburstNodeData
+    [key: string]: SunburstNodeData;
 }
 
-export interface SunburstDataResponse {
+export interface SunburstData {
     sunburstData: SunburstNode;
 }
 
+export interface SunburstDataResponse {
+    data: SunburstData;
+}
+
 const sunburstResponseExample: SunburstDataResponse = {
-    sunburstData: {
-        "BT": {
-            ancestor_dx: "abc",
-            ancestor_dx_name: "abc",
-            ancestor_dx_full: "abc",
-            dx_short: "abc",
-            dx_full: "abc",
-            disease_descendant_codes: "abc",
-            dx_level: 0,
-            mutsig_total_subject_count: 0,
-            mutsig_total_sample_count: 0,
-            tsne_total_subject_count: 0,
-            tsne_total_sample_count: 0,
-            hist_total_subject_count: 0,
-            histology_total_sample_count: 0,
-            variants_total_subject_count: 0,
-            variants_total_sample_count: 0,
-            total_subject_count: 0,
-            total_sample_count: 0,
-            cstn_portal_total_sample_count: 0
-        },
+    data: {
+        sunburstData: {
+            "BT": {
+                ancestor_dx: "abc",
+                ancestor_dx_name: "abc",
+                ancestor_dx_full: "abc",
+                dx_short: "abc",
+                dx_full: "abc",
+                disease_descendant_codes: "abc",
+                dx_level: 0,
+                mutsig_total_subject_count: 0,
+                mutsig_total_sample_count: 0,
+                tsne_total_subject_count: 0,
+                tsne_total_sample_count: 0,
+                hist_total_subject_count: 0,
+                histology_total_sample_count: 0,
+                variants_total_subject_count: 0,
+                variants_total_sample_count: 0,
+                total_subject_count: 0,
+                total_sample_count: 0,
+                cstn_portal_total_sample_count: 0
+            },
+            "BT|ETC": {
+                ancestor_dx: "abc",
+                ancestor_dx_name: "abc",
+                ancestor_dx_full: "abc",
+                dx_short: "abc",
+                dx_full: "abc",
+                disease_descendant_codes: "abc",
+                dx_level: 0,
+                mutsig_total_subject_count: 0,
+                mutsig_total_sample_count: 0,
+                tsne_total_subject_count: 0,
+                tsne_total_sample_count: 0,
+                hist_total_subject_count: 0,
+                histology_total_sample_count: 0,
+                variants_total_subject_count: 0,
+                variants_total_sample_count: 0,
+                total_subject_count: 0,
+                total_sample_count: 0,
+                cstn_portal_total_sample_count: 0
+            },
+        }
     }
 }
