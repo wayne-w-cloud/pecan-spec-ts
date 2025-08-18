@@ -19,7 +19,7 @@ export interface PieVariantJobData {
     released: boolean;
     importance: number;
     hgvs_coordinates: any | null;
-    preferred: boolean
+    preferred: boolean;
 }
 
 export interface VariantData {
@@ -54,7 +54,7 @@ export interface MedalCeremony {
     // can be either A or C or G or T
     chr_allele: string;
     alternative_allele: string;
-    additional_shift_bases: 0;
+    additional_shift_bases: number;
     variant_note: string | null;
     annovar_region: string | null;
     annovar_region_gene: string | null;
