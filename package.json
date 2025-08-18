@@ -6,7 +6,7 @@
     "scripts": {
         "build": "npx tsc",
         "prettier:check": "npx prettier . --check",
-        "prettier:fix": "npx pprettier . --write",
+        "prettier:format": "npx prettier . --write",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
