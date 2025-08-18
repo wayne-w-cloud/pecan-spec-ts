@@ -7,7 +7,7 @@ export interface HistologyPublicSlideSearchRequest {
     sample_site?: string;
     sample_disease_stage?: string[];
     sample_is_metastatic?: string[];
-    sample_name?: string
+    sample_name?: string;
 }
 
 export interface HistologyPublicSlideSearchResponse {

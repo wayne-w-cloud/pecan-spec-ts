@@ -3,7 +3,7 @@ export interface PieJobListResponse {
     name: string;
     file: string;
     user_id: number;
-    status:  string
+    status: string;
     notes: string;
     input_file_id: string;
     annovar_job_id: string;

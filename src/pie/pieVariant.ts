@@ -24,5 +24,5 @@ export interface PieVariant {
     germline_committee_classification: string | null;
     your_somatic_classification: string | null;
     your_germline_classification: string | null;
-    category: string
+    category: string;
 }

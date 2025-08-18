@@ -34,7 +34,7 @@ export interface SunburstDataResponse {
 const sunburstResponseExample: SunburstDataResponse = {
     data: {
         sunburstData: {
-            "BT": {
+            BT: {
                 ancestor_dx: "abc",
                 ancestor_dx_name: "abc",
                 ancestor_dx_full: "abc",
@@ -52,7 +52,7 @@ const sunburstResponseExample: SunburstDataResponse = {
                 variants_total_sample_count: 0,
                 total_subject_count: 0,
                 total_sample_count: 0,
-                cstn_portal_total_sample_count: 0
+                cstn_portal_total_sample_count: 0,
             },
             "BT|ETC": {
                 ancestor_dx: "abc",
@@ -72,8 +72,8 @@ const sunburstResponseExample: SunburstDataResponse = {
                 variants_total_sample_count: 0,
                 total_subject_count: 0,
                 total_sample_count: 0,
-                cstn_portal_total_sample_count: 0
+                cstn_portal_total_sample_count: 0,
             },
-        }
-    }
-}
+        },
+    },
+};

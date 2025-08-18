@@ -2,7 +2,7 @@ export interface SampleMetadata {
     cosine_similarity: string;
     number_of_mutations: string;
     disease_group: string;
-    disease_group_description: string; 
+    disease_group_description: string;
 }
 
 export interface SampleMutationalProfile {

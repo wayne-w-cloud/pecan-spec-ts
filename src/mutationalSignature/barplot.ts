@@ -1,6 +1,6 @@
 export interface BarplotResponse {
     data: BarplotResponse;
-};
+}
 
 export interface BarrPlot {
     subtitle: string;

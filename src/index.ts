@@ -1,3 +1,3 @@
-import type { SunburstDataResponse } from './sunburst';
+import type { SunburstDataResponse } from "./sunburst";
 
 export type { SunburstDataResponse };

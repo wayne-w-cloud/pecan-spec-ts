@@ -38,11 +38,16 @@ export interface VariantDetail {
         variant_classification: any | {};
         modes: any[];
         modes_specify: string;
-    }
+    };
 }
 
 export interface VariantCache {
-    [key: string]: MedalCeremony | Hgvs | VariantClassification | VariantClassificationHistory | ClinVar;
+    [key: string]:
+        | MedalCeremony
+        | Hgvs
+        | VariantClassification
+        | VariantClassificationHistory
+        | ClinVar;
 }
 
 export interface MedalCeremony {

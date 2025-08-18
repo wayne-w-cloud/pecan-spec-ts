@@ -4,7 +4,7 @@ export interface PieGeneCategoryCountResponse {
 
 export interface PieGeneCategoryCount {
     cancer: number;
-    cardiovascular:number;
+    cardiovascular: number;
     immunological: number;
     als: number;
     hematological: number;

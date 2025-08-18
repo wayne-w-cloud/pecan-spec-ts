@@ -3,14 +3,14 @@ export interface HeatmapResponse {
         signitures: Signature[];
         diseases_groups: DiseaseGroup;
         rows: Row[];
-    }
+    };
 }
 
 export interface Signature {
     signature: string;
     signature_aetiology: string;
     signature_display_color: string;
-    signature_reference: string
+    signature_reference: string;
 }
 
 export interface DiseaseGroup {
