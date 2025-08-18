@@ -49,10 +49,12 @@ export interface HistologyPublicFilteredSlide {
 }
 
 export interface HistologyPublicFilterResponse {
-    data: {
-        filters: HistologyFilterName;
-        filter_labels: HistologyFilterLabel;
-    }
+    data: HistologyPublicFilter;
+}
+
+export interface HistologyPublicFilter {
+    filters: HistologyFilterName;
+    filter_labels: HistologyFilterLabel;
 }
 
 export interface HistologyFilterLabel {
