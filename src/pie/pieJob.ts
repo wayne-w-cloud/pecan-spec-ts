@@ -61,5 +61,5 @@ export interface PieJob {
     blacklist_file_id: string | null;
     whitelist_file_id: string | null;
     is_mutalyzer: boolean;
-    failed_exception: string | null    
+    failed_exception: string | null;
 }
