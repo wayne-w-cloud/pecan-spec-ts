@@ -1,17 +1,20 @@
 {
-  "name": "pecan-client-spec",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
-  "scripts": {
-    "build": "npx tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^24.3.0",
-    "typescript": "^5.9.2"
-  }
+    "name": "pecan-client-spec",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "build": "npx tsc",
+        "prettier:check": "npx prettier . --check",
+        "prettier:fix": "npx pprettier . --write",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^24.3.0",
+        "prettier": "3.6.2",
+        "typescript": "^5.9.2"
+    }
 }
