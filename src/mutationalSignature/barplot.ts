@@ -1,11 +1,13 @@
 export interface BarplotResponse {
-    data: {
-        subtitle: string;
-        total_sample_count: number;
-        barplot_summary: BarplotSummary;
-        barplot_data: BarplotData[];
-    }
+    data: BarplotResponse;
 };
+
+export interface BarrPlot {
+    subtitle: string;
+    total_sample_count: number;
+    barplot_summary: BarplotSummary;
+    barplot_data: BarplotData[];
+}
 
 export interface BarplotSummary {
     [key: string]: SignatureData;
@@ -23,7 +25,7 @@ export interface SampleMetadata {
     disease_group: string;
     disease_group_description: string;
     number_of_mutations: number;
-    cosine_similarity: number
+    cosine_similarity: number;
 }
 
 export interface SignatureData {
