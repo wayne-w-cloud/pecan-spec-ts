@@ -1,3 +1,4 @@
 import type { SunburstDataResponse } from "./sunburst";
+import type { OncoPrintResponse } from "./variant";
 
-export type { SunburstDataResponse };
+export type { SunburstDataResponse, OncoPrintResponse };
