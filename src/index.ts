@@ -12,6 +12,7 @@ import type {
     HeatmapResponse,
     MutationalSignatureSampleResponse,
 } from "./mutationalSignature";
+import type { GeneSearchResponse, VariantSearchResponse } from "./globalSearch";
 
 export type {
     SunburstDataResponse,
@@ -24,4 +25,6 @@ export type {
     BarplotResponse,
     HeatmapResponse,
     MutationalSignatureSampleResponse,
+    GeneSearchResponse,
+    VariantSearchResponse,
 };

@@ -7,7 +7,7 @@ import type {
     HistologyUserSlideResponse,
     HistologyUserSlideMetaDataLabels,
     HistologyUserSlideSample,
-} from "./histologyUserSlide";
+} from "./histologyUserSlideSearch";
 
 export type {
     HistologyPublicFilteredSlide,

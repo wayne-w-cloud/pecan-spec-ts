@@ -11,6 +11,10 @@ export interface HistologyPublicSlideSearchRequest {
 }
 
 export interface HistologyPublicSlideSearchResponse {
+    data: HistologyPublicSlideSearchData;
+}
+
+export interface HistologyPublicSlideSearchData {
     total_sample_count: number;
     number_of_pages: number;
     filtered_slides: HistologyPublicFilteredSlide[];

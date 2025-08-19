@@ -1,4 +1,8 @@
 export interface HistologyUserSlideResponse {
+    data: HistologyUserSlideData;
+}
+
+export interface HistologyUserSlideData {
     sample: HistologyUserSlideSample;
     metadata_labels: HistologyUserSlideMetaDataLabels;
     siblings: HistologyUserSlideSample[];
