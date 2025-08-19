@@ -7,6 +7,11 @@ import type {
     PieVariantResponse,
     PieVariantJobResponse,
 } from "./pie";
+import type {
+    BarplotResponse,
+    HeatmapResponse,
+    MutationalSignatureSampleResponse,
+} from "./mutationalSignature";
 
 export type {
     SunburstDataResponse,
@@ -16,4 +21,7 @@ export type {
     PieJobListResponse,
     PieVariantResponse,
     PieVariantJobResponse,
+    BarplotResponse,
+    HeatmapResponse,
+    MutationalSignatureSampleResponse,
 };

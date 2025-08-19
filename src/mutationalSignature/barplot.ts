@@ -1,5 +1,5 @@
 export interface BarplotResponse {
-    data: BarplotResponse;
+    data: BarrPlot;
 }
 
 export interface BarrPlot {

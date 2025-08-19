@@ -18,8 +18,12 @@ export interface ReferenceMutationalProfile {
     signature_mutational_profile: SampleMutationalProfile;
 }
 
-export interface MutationalSignatureSampleResponse {
+export interface MutationalSignatureSampleData {
     sample_metadata: SampleMetadata;
     sample_mutational_profile: SampleMutationalProfile[];
     reference_mutational_profiles: ReferenceMutationalProfile[];
+}
+
+export interface MutationalSignatureSampleResponse {
+    data: MutationalSignatureSampleData;
 }

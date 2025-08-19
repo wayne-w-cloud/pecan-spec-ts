@@ -1,9 +1,11 @@
 export interface HeatmapResponse {
-    data: {
-        signitures: Signature[];
-        diseases_groups: DiseaseGroup;
-        rows: Row[];
-    };
+    data: HeatmapData;
+}
+
+export interface HeatmapData {
+    signitures: Signature[];
+    diseases_groups: DiseaseGroup;
+    rows: Row[];
 }
 
 export interface Signature {
