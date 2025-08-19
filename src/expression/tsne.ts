@@ -1,8 +1,8 @@
 export interface TsneResponse {
-    data: Tsne;
+    data: TsneData;
 }
 
-export interface Tsne {
+export interface TsneData {
     config: TsneConfig;
     sample_metadata: SampleMetadata[];
 }

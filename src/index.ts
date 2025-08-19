@@ -4,6 +4,7 @@ import * as PieModuleSpec from "./pie";
 import * as MutationalSignatureSpec from "./mutationalSignature";
 import * as GlobalSearchSpec from "./globalSearch";
 import * as HistologyModuleSpec from "./histology";
+import * as ExpressionModuleSpec from "./expression";
 
 export type {
     SunburstSpec,
@@ -12,4 +13,5 @@ export type {
     MutationalSignatureSpec,
     GlobalSearchSpec,
     HistologyModuleSpec,
+    ExpressionModuleSpec,
 };
