@@ -5,8 +5,8 @@
     "main": "index.ts",
     "scripts": {
         "build": "rm -rf dist && npx tsc",
-        "prettier:check": "npx prettier . --check",
-        "prettier:format": "npx prettier . --write",
+        "check": "npx prettier . --check",
+        "format": "npx prettier . --write",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
