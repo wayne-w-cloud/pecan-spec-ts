@@ -1,30 +1,15 @@
-import type { SunburstDataResponse } from "./sunburst";
-import type { OncoPrintResponse } from "./variant";
-import type {
-    PieGeneCategoryCountResponse,
-    PieJobDetailResponse,
-    PieJobListResponse,
-    PieVariantResponse,
-    PieVariantJobResponse,
-} from "./pie";
-import type {
-    BarplotResponse,
-    HeatmapResponse,
-    MutationalSignatureSampleResponse,
-} from "./mutationalSignature";
-import type { GeneSearchResponse, VariantSearchResponse } from "./globalSearch";
+import * as SunburstSpec from "./sunburst";
+import * as VariantModuleSpec from "./variant";
+import * as PieModuleSpec from "./pie";
+import * as MutationalSignatureSpec from "./mutationalSignature";
+import * as GlobalSearchSpec from "./globalSearch";
+import * as HistologyModuleSpec from "./histology";
 
 export type {
-    SunburstDataResponse,
-    OncoPrintResponse,
-    PieGeneCategoryCountResponse,
-    PieJobDetailResponse,
-    PieJobListResponse,
-    PieVariantResponse,
-    PieVariantJobResponse,
-    BarplotResponse,
-    HeatmapResponse,
-    MutationalSignatureSampleResponse,
-    GeneSearchResponse,
-    VariantSearchResponse,
+    SunburstSpec,
+    VariantModuleSpec,
+    PieModuleSpec,
+    MutationalSignatureSpec,
+    GlobalSearchSpec,
+    HistologyModuleSpec,
 };
