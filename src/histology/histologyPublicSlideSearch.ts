@@ -32,7 +32,6 @@ export interface HistologyPublicFilteredSlide {
     subject_name: string;
     disease_code: string;
     long_disease_name: string;
-    // TODO make it an enum
     subject_sex: string;
     disease_display_color: string;
     diagnosis_group_name: string | null;
@@ -48,7 +47,6 @@ export interface HistologyPublicFilteredSlide {
     histology_image_microns_per_pixel: number;
     data_facet_name: string;
     data_facet_source: string;
-    // TODO make it an enum
     histology_image_status: string;
 }
 
