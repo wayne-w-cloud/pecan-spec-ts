@@ -3,7 +3,7 @@ export interface PieVariantJobResponse {
 }
 
 export interface PieVariantJobData {
-    id: number;
+    readonly id: number;
     chr: string;
     wu_hg19_pos: string;
     referenceallele: string;
@@ -27,8 +27,8 @@ export interface VariantData {
 }
 
 export interface VariantDetail {
-    variant_id: number;
-    user_id: number;
+    readonly variant_id: number;
+    readonly user_id: number;
     updated_at: Date;
     created_at: Date;
     id: number;

@@ -1,5 +1,5 @@
 export interface PieJobListResponse {
-    id: number;
+    readonly id: number;
     name: string;
     file: string;
     user_id: number;

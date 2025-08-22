@@ -7,6 +7,6 @@ export interface SampleGeneExpressionData {
 }
 
 export interface SampleGeneExpression {
-    sample_name: string;
+    readonly sample_name: string;
     normalized_val_log10: string;
 }

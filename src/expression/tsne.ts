@@ -17,7 +17,7 @@ export interface TsneConfig {
 }
 
 export interface SampleMetadata {
-    sample_name: string;
+    readonly sample_name: string;
     sample_type: string;
     disease_code: string;
     disease_name: string;

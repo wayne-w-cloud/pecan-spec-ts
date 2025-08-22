@@ -9,7 +9,7 @@ export interface HistologyUserSlideData {
 }
 
 export interface HistologyUserSlideSample {
-    slide_id: string;
+    readonly slide_id: string;
     file_name: string;
     file_path: string | null;
     file_size_bytes: number;
@@ -52,7 +52,7 @@ export interface HistologyUserSlidePatchResponse {
 }
 
 export interface SlidePatch {
-    id: number;
+    readonly id: number;
     slide_id: string;
     wsi_loc_x: number;
     wsi_loc_y: number;

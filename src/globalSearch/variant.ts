@@ -8,7 +8,7 @@ export interface Variants {
 }
 
 export interface Variant {
-    id: string;
+    readonly id: string;
     legacy_text: string;
     gene_symbol: string;
     aachange: string;

@@ -8,7 +8,7 @@ export interface Genes {
 }
 
 export interface GeneItem {
-    id: string;
+    readonly id: string;
     legacy_text: string;
     points: string;
     type: string;

@@ -8,7 +8,7 @@ export interface PieVariantData {
 }
 
 export interface PieVariant {
-    id: number;
+    readonly id: number;
     chr: string;
     wu_hg19_pos: number;
     referenceallele: string;
