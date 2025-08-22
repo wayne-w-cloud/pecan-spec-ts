@@ -1,7 +1,7 @@
 import type { Data } from "../util";
 
-export interface HistologyUserSlideResponse extends Data<HistologyUserSlideData>{
-}
+export interface HistologyUserSlideResponse
+    extends Data<HistologyUserSlideData> {}
 
 export interface HistologyUserSlideData {
     sample: HistologyUserSlideSample;
@@ -44,11 +44,10 @@ export interface HistologyUserSlideMetaDataLabels {
     long_disease_name: string;
 }
 
-export interface HistologyUserSlideSimiliarSlideSearchResponse extends Data<HistologyUserSlideSample[]> {
-}
+export interface HistologyUserSlideSimiliarSlideSearchResponse
+    extends Data<HistologyUserSlideSample[]> {}
 
-export interface HistologyUserSlidePatchResponse extends Data<SlidePatch[]> {
-}
+export interface HistologyUserSlidePatchResponse extends Data<SlidePatch[]> {}
 
 export interface SlidePatch {
     readonly id: number;

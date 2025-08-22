@@ -1,7 +1,6 @@
 import type { Data } from "../util";
 
-export interface GeneSearchResponse extends Data <Genes> {
-}
+export interface GeneSearchResponse extends Data<Genes> {}
 
 export interface Genes {
     searchTerm: string;

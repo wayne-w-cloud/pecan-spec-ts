@@ -1,7 +1,6 @@
 import type { Data } from "../util";
 
-export interface PieVariantResponse extends Data <PieVariantData> {
-}
+export interface PieVariantResponse extends Data<PieVariantData> {}
 
 export interface PieVariantData {
     total: number;

@@ -26,5 +26,5 @@ export interface MutationalSignatureSampleData {
     reference_mutational_profiles: ReferenceMutationalProfile[];
 }
 
-export interface MutationalSignatureSampleResponse extends Data<MutationalSignatureSampleData> {
-}
+export interface MutationalSignatureSampleResponse
+    extends Data<MutationalSignatureSampleData> {}

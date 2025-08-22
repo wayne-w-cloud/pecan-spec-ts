@@ -1,7 +1,6 @@
 import type { Data } from "../util";
 
-export interface BarplotResponse extends Data<BarrPlot>{
-}
+export interface BarplotResponse extends Data<BarrPlot> {}
 
 export interface BarrPlot {
     subtitle: string;

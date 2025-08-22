@@ -1,7 +1,6 @@
 import type { Data } from "../util";
 
-export interface HeatmapResponse extends Data<HeatmapData>{
-}
+export interface HeatmapResponse extends Data<HeatmapData> {}
 
 export interface HeatmapData {
     signitures: Signature[];

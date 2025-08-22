@@ -12,8 +12,8 @@ export interface HistologyPublicSlideSearchRequest {
     sample_name?: string;
 }
 
-export interface HistologyPublicSlideSearchResponse extends Data<HistologyPublicSlideSearchData> {
-}
+export interface HistologyPublicSlideSearchResponse
+    extends Data<HistologyPublicSlideSearchData> {}
 
 export interface HistologyPublicSlideSearchData {
     total_sample_count: number;
@@ -51,8 +51,8 @@ export interface HistologyPublicFilteredSlide {
     histology_image_status: string;
 }
 
-export interface HistologyPublicFilterResponse extends Data<HistologyPublicFilter> {
-}
+export interface HistologyPublicFilterResponse
+    extends Data<HistologyPublicFilter> {}
 
 export interface HistologyPublicFilter {
     filters: HistologyFilterName;

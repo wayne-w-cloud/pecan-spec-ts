@@ -15,5 +15,5 @@ export type {
     HistologyUserSlideResponse,
     HistologyUserSlideMetaDataLabels,
     HistologyUserSlideSample,
-    HistologyUserSlideSimiliarSlideSearchResponse
+    HistologyUserSlideSimiliarSlideSearchResponse,
 };
