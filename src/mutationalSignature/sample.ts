@@ -1,3 +1,5 @@
+import type { Data } from "../util";
+
 export interface SampleMetadata {
     cosine_similarity: string;
     number_of_mutations: string;
@@ -24,6 +26,5 @@ export interface MutationalSignatureSampleData {
     reference_mutational_profiles: ReferenceMutationalProfile[];
 }
 
-export interface MutationalSignatureSampleResponse {
-    data: MutationalSignatureSampleData;
+export interface MutationalSignatureSampleResponse extends Data<MutationalSignatureSampleData> {
 }

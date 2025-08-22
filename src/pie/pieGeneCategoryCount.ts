@@ -1,6 +1,7 @@
-export interface PieGeneCategoryCountResponse {
-    data: PieGeneCategoryCount;
-}
+import type { Data } from "../util";
+
+export interface PieGeneCategoryCountResponse
+    extends Data<PieGeneCategoryCount> {}
 
 export interface PieGeneCategoryCount {
     cancer: number;

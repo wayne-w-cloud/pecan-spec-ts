@@ -1,3 +1,5 @@
+import type { Data } from "../util";
+
 export interface SunburstNodeData {
     ancestor_dx: string;
     ancestor_dx_name: string;
@@ -27,9 +29,7 @@ export interface SunburstData {
     sunburstData: SunburstNode;
 }
 
-export interface SunburstDataResponse {
-    data: SunburstData;
-}
+export interface SunburstDataResponse extends Data<SunburstData> {}
 
 const sunburstResponseExample: SunburstDataResponse = {
     data: {

@@ -1,5 +1,6 @@
-export interface VariantSearchResponse {
-    data: Variants;
+import type { Data } from "../util";
+
+export interface VariantSearchResponse extends Data<Variants>{
 }
 
 export interface Variants {

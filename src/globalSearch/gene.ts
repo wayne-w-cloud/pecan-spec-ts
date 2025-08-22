@@ -1,5 +1,6 @@
-export interface GeneSearchResponse {
-    data: Genes;
+import type { Data } from "../util";
+
+export interface GeneSearchResponse extends Data <Genes> {
 }
 
 export interface Genes {

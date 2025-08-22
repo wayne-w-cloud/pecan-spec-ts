@@ -1,3 +1,5 @@
+import type { Data } from "../util";
+
 export interface HistologyPublicSlideSearchRequest {
     diseases?: string[];
     unknown_ages?: boolean;
@@ -10,8 +12,7 @@ export interface HistologyPublicSlideSearchRequest {
     sample_name?: string;
 }
 
-export interface HistologyPublicSlideSearchResponse {
-    data: HistologyPublicSlideSearchData;
+export interface HistologyPublicSlideSearchResponse extends Data<HistologyPublicSlideSearchData> {
 }
 
 export interface HistologyPublicSlideSearchData {
@@ -50,8 +51,7 @@ export interface HistologyPublicFilteredSlide {
     histology_image_status: string;
 }
 
-export interface HistologyPublicFilterResponse {
-    data: HistologyPublicFilter;
+export interface HistologyPublicFilterResponse extends Data<HistologyPublicFilter> {
 }
 
 export interface HistologyPublicFilter {

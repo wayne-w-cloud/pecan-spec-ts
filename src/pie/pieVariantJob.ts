@@ -1,6 +1,6 @@
-export interface PieVariantJobResponse {
-    data: PieVariantJobData;
-}
+import type { Data } from "../util";
+
+export interface PieVariantJobResponse extends Data<PieVariantJobData>{}
 
 export interface PieVariantJobData {
     readonly id: number;

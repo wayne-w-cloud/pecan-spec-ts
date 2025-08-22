@@ -1,5 +1,6 @@
-export interface HeatmapResponse {
-    data: HeatmapData;
+import type { Data } from "../util";
+
+export interface HeatmapResponse extends Data<HeatmapData>{
 }
 
 export interface HeatmapData {

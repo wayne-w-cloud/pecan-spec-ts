@@ -1,6 +1,6 @@
-export interface TsneResponse {
-    data: TsneData;
-}
+import type { Data } from "../util";
+
+export interface TsneResponse extends Data<TsneData> {}
 
 export interface TsneData {
     config: TsneConfig;

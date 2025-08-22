@@ -1,5 +1,6 @@
-export interface HistologyUserSlideResponse {
-    data: HistologyUserSlideData;
+import type { Data } from "../util";
+
+export interface HistologyUserSlideResponse extends Data<HistologyUserSlideData>{
 }
 
 export interface HistologyUserSlideData {
@@ -43,12 +44,10 @@ export interface HistologyUserSlideMetaDataLabels {
     long_disease_name: string;
 }
 
-export interface HistologyUserSlideSimiliarSlideSearchResponse {
-    data: HistologyUserSlideSample[];
+export interface HistologyUserSlideSimiliarSlideSearchResponse extends Data<HistologyUserSlideSample[]> {
 }
 
-export interface HistologyUserSlidePatchResponse {
-    data: SlidePatch[];
+export interface HistologyUserSlidePatchResponse extends Data<SlidePatch[]> {
 }
 
 export interface SlidePatch {

@@ -1,3 +1,5 @@
+import type { Data } from "../util";
+
 export interface SampleAnnotation {
     [key: string]: Annotation;
 }
@@ -68,6 +70,4 @@ export interface OncoPrint {
     sampleAnnotation: SampleAnnotation;
 }
 
-export interface OncoPrintResponse {
-    data: OncoPrint;
-}
+export interface OncoPrintResponse extends Data<OncoPrint> {}

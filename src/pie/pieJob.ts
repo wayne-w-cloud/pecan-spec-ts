@@ -1,4 +1,8 @@
-export interface PieJobListResponse {
+import type { Data } from "../util";
+
+export interface PieJobListResponse extends Data<PieJobListData> {}
+
+export interface PieJobListData {
     readonly id: number;
     name: string;
     file: string;
@@ -34,9 +38,7 @@ export interface PieJobListResponse {
     failed_exception: string | null;
 }
 
-export interface PieJobDetailResponse {
-    data: PieJobDetail;
-}
+export interface PieJobDetailResponse extends Data<PieJobDetail> {}
 
 export interface PieJobDetail {
     job: PieJob;

@@ -1,6 +1,7 @@
-export interface GeneExpressionResponse {
-    data: SampleGeneExpressionData;
-}
+import type { Data } from "../util";
+
+export interface GeneExpressionResponse
+    extends Data<SampleGeneExpressionData> {}
 
 export interface SampleGeneExpressionData {
     sampleGeneExpressionData: SampleGeneExpression[];
